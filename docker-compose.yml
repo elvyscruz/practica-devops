@@ -1,9 +1,17 @@
 version: '3.1'
 services:
   web:
-    image: httpd
+    image: php:8.1-apache
     restart: always
     ports:
       - 80:80
     volumes:
-      - ./htdocs:/usr/local/apache2/htdocs/
+      - ./src:/var/www/html/
+
+  mysql:
+    image: mariadb
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: sekret
