@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: list file
-        run: pwd;ls
+        run: ls
       - name: Deploy to elvys.surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
           domain: 'elvys.surge.sh'
-          project: 'practica2/index.html'
+          project: 'pracitca-devops/dpractica2/'
           login: ${{ secrets.surge_login }}
           token: ${{ secrets.surge_token }}
