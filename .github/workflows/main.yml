@@ -13,6 +13,6 @@ jobs:
         uses: dswistowski/surge-sh-action@v1
         with:
           domain: 'elvys.surge.sh'
-          project: 'pracitca-devops/practica2/'
+          project: 'practica-devops/practica2/'
           login: ${{ secrets.surge_login }}
           token: ${{ secrets.surge_token }}
