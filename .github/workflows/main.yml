@@ -7,6 +7,8 @@ jobs:
     name: My job
     runs-on: ubuntu-latest
     steps:
+      - name: list file
+        run: pwd;ls
       - name: Deploy to elvys.surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
