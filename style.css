@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@400;500;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.test {
+    width: fit-content;
+    height: 200px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+    padding: 0 100px ;
+
+    border: 1px solid rgb(211, 211, 211);
+    background-color: #fff;
+    margin: auto;
+    border-radius: 6px;
+
+    font-family: 'Poppins';
+    color: #594242;
+    transition: color .5s ease-in;
+    transform: scaleX(1);
+    transition: transform .9s ease;
+}
+
+.test:hover {
+    color: rgb(137, 137, 249);
+    transition: color .5s ease-out;
+    transform: scaleX(-1);
+    transition: transform .9s ease;
+    cursor: pointer;
+}
+
